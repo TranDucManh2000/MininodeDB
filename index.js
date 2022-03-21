@@ -3,7 +3,7 @@ const connection = require('./connection-example');
 const express = require('express')
 const cors = require('cors') // sql
 const app = express()
-const port = 3001
+const port = process.env.PORT || 3000
 // mogan
 const morgan = require('morgan')
 app.use(morgan('combined')) // sql
